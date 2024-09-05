@@ -1,17 +1,21 @@
 // src/components/RegisterPage.js
 import React, { useState } from 'react';
-import { registerUser } from '../services/UserServices';
+import { registerUser } from '../services/Post';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const Navigate = useNavigate()
+
 
   const handleRegister = async (event) => {
     event.preventDefault();
     try {
       const result = await registerUser(username, password);
       setMessage('User registered successfully');
+      Navigate("/")
     } catch (error) {
       setMessage('Error registering user');
     }
@@ -22,6 +26,7 @@ const RegisterPage = () => {
       <h2>Register</h2>
       <form onSubmit={handleRegister}>
         <div>
+          <hr />
           <label>
             Username:
             <input

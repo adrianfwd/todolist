@@ -1,29 +1,14 @@
 {
   "users": [
     {
-      "username": "user1",
-      "password": "password1",
-      "id": "71f3"
+      "id": "408f",
+      "username": "adrian",
+      "password": "adrian"
     },
     {
-      "username": "user2",
-      "password": "password2",
-      "id": "7a1e"
-    },
-    {
-      "id": "1808",
-      "username": "pene",
-      "password": "pene"
-    },
-    {
-      "id": "4dac",
-      "username": "aguacate",
-      "password": "aguacate"
-    },
-    {
-      "id": "34d8",
-      "username": "aguacate",
-      "password": "aguacate"
+      "id": "6a15",
+      "username": "d",
+      "password": "d"
     }
   ]
 }

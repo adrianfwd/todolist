@@ -1,6 +1,6 @@
 // src/components/LoginPage.js
 import React, { useState } from 'react';
-import { getUsers } from '../services/UserServices';
+import { getUsers } from '../services/Get';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -20,7 +20,7 @@ const LoginPage = () => {
 
       if (user) {
         setMessage('Login successful');
-        Navigate("/todolist")
+        Navigate("/notelist")
       } else {
         setMessage('Invalid username or password');
       }
@@ -34,6 +34,7 @@ const LoginPage = () => {
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <div>
+          <hr />
           <label>
             Username:
             <input

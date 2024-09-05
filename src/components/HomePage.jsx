@@ -7,10 +7,11 @@ const HomePage = () => {
     <div>
       <h1>Welcome</h1>
       <nav>
+        <hr />
         <ul>
           <li><Link to="/login">Login</Link></li>
           <li><Link to="/register">Register</Link></li>
-          <li><Link to="/todolist">todolist</Link></li>
+          <li><Link to="/notelist">Note list</Link></li>
         </ul>
       </nav>
     </div>
