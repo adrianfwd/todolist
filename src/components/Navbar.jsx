@@ -13,9 +13,8 @@ function navbar_page() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/informacion">Informacion</Nav.Link>
-            <Nav.Link href="/paquetes">Paquetes</Nav.Link>
-            <Nav.Link href="/paquetes">Redes</Nav.Link>
-            <Nav.Link href="/paquetes">Contacto</Nav.Link>
+            <Nav.Link href="/redes">Redes</Nav.Link>
+            <Nav.Link href="/contacto">Contacto</Nav.Link>
             <NavDropdown title="Usuario" id="basic-nav-dropdown">
               <NavDropdown.Item href="/register">Registro</NavDropdown.Item>
               <NavDropdown.Item href="/login">Login</NavDropdown.Item>

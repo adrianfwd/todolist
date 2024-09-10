@@ -1,8 +1,8 @@
-// src/components/LoginPage.js
 import React, { useState } from "react";
 import { getUsers } from "../services/Get";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Routing from "../Routes/Routes";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -20,7 +20,12 @@ const LoginPage = () => {
 
       if (user) {
         setMessage("Login successful");
-        Navigate("/notelist");
+
+        localStorage.setItem("Authentication", "true");
+        localStorage.setItem('nombre',username);
+
+        Navigate("/servicios");
+
       } else {
         setMessage("Invalid username or password");
       }

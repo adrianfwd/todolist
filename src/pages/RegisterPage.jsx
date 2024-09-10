@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { registerUser } from "../services/Post";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import "./RegisterPage.css";
 
 const RegisterPage = () => {
   const [username, setUsername] = useState("");
@@ -23,9 +24,10 @@ const RegisterPage = () => {
 
   return (
     <>
+  
       <Navbar />
       <br />
-      <div>
+      <div className="cuerpo">
         <h2>Register</h2>
         <form onSubmit={handleRegister}>
           <div>
@@ -55,6 +57,7 @@ const RegisterPage = () => {
           {message && <p>{message}</p>}
         </form>
       </div>
+
     </>
   );
 };
