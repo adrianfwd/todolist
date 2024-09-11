@@ -13,15 +13,11 @@ function navbar_page() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/informacion">Informacion</Nav.Link>
-            <Nav.Link href="/redes">Redes</Nav.Link>
-            <Nav.Link href="/contacto">Contacto</Nav.Link>
+            <Nav.Link href="/administracion">Administracion</Nav.Link>
+            <Nav.Link href="/tienda">Tienda</Nav.Link>
             <NavDropdown title="Usuario" id="basic-nav-dropdown">
               <NavDropdown.Item href="/register">Registro</NavDropdown.Item>
               <NavDropdown.Item href="/login">Login</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

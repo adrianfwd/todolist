@@ -24,7 +24,7 @@ const LoginPage = () => {
         localStorage.setItem("Authentication", "true");
         localStorage.setItem('nombre',username);
 
-        Navigate("/servicios");
+        Navigate("/");
 
       } else {
         setMessage("Invalid username or password");
